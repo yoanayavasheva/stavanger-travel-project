@@ -4,11 +4,68 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  margin: 10px;
+  margin: 0;
+}
+
+section {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("../images/stavanger-footer.jpg");
+  background-size: no-repeat;
+  background-size: cover;
+  padding: 80px 20px;
+}
+
+footer .container {
+  max-width: 900px;
+}
+
+footer a {
+  color: white;
+}
+
+footer ul {
+  padding-left: 0;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+}
+
+footer p {
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr 3fr;
+}
+
+.column {
+  margin: 20px;
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/stavanger.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,7 +78,6 @@ header h1 {
   font-weight: 700;
   font-size: 80px;
   line-height: 1.2;
-  padding: 10px;
 }
 
 header h2 {
@@ -64,12 +120,30 @@ header .learn-more-link {
   }
 
   header h3 {
-    font-size: 10px;
+    font-size: 16px;
   }
 
   header .learn-more-link {
     font-size: 10px;
     padding: 12px 24px;
     margin-top: 16px;
+  }
+
+  footer .grid {
+    grid-template-columns: 1fr;
+  }
+
+  footer .column {
+    margin: 5px;
+    text-align: center;
+  }
+
+  footer h4 {
+    font-size: 16px;
+  }
+
+  footer p,
+  ul {
+    font-size: 15px;
   }
 }
