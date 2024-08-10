@@ -8,8 +8,9 @@ body {
 }
 
 section {
-  max-width: 90%;
+  max-width: 70%;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 footer {
@@ -21,7 +22,6 @@ footer {
     url("../images/stavanger-footer.jpg");
   background-size: no-repeat;
   background-size: cover;
-  padding: 80px 20px;
 }
 
 footer .container {
@@ -56,10 +56,23 @@ footer p {
   line-height: 1.5;
 }
 
-footer .grid {
+.grid {
   display: grid;
+}
+
+footer .grid {
   grid-template-columns: 2fr 3fr 3fr;
   grid-gap: 64px;
+}
+
+main .grid {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+main .oil-rig-img {
+  object-fit: contain;
+  max-width: 90%;
 }
 
 header {
@@ -69,12 +82,12 @@ header {
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 200px 0;
+  padding: 50px 0;
 }
 
 header h1 {
   font-weight: 700;
-  font-size: 80px;
+  font-size: 70px;
   line-height: 1.2;
 }
 
@@ -104,9 +117,34 @@ header .learn-more-link {
   margin-top: 32px;
 }
 
-h4.card-title {
+main {
+  background-color: white;
+}
+
+main h2 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  margin: 0;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
 }
 
 @media (max-width: 900px) {
@@ -148,9 +186,5 @@ h4.card-title {
   footer p,
   ul {
     font-size: 15px;
-  }
-
-  .body .card {
-    grid-template-columns: 1fr;
   }
 }
