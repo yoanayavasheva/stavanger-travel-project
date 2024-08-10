@@ -40,6 +40,7 @@ footer ul {
 
 footer li {
   list-style: none;
+  padding-bottom: 5px;
 }
 
 footer h4 {
@@ -55,7 +56,7 @@ footer p {
   line-height: 1.5;
 }
 
-.grid {
+footer .grid {
   display: grid;
   grid-template-columns: 2fr 3fr 3fr;
 }
@@ -82,7 +83,7 @@ header h1 {
 
 header h2 {
   font-weight: 400;
-  font-size: 36px;
+  font-size: 40px;
   line-height: 1.5;
 }
 
@@ -106,6 +107,11 @@ header .learn-more-link {
   margin-top: 32px;
 }
 
+h4.card-title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
 @media (max-width: 900px) {
   header {
     padding: 60px 0;
@@ -120,7 +126,7 @@ header .learn-more-link {
   }
 
   header h3 {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   header .learn-more-link {
@@ -130,6 +136,10 @@ header .learn-more-link {
   }
 
   footer .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card .grid {
     grid-template-columns: 1fr;
   }
 
@@ -145,5 +155,9 @@ header .learn-more-link {
   footer p,
   ul {
     font-size: 15px;
+  }
+
+  .body .card {
+    grid-template-columns: 1fr;
   }
 }
