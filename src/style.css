@@ -10,7 +10,7 @@ body {
 section {
   max-width: 70%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 80px 0;
 }
 
 footer {
@@ -22,10 +22,6 @@ footer {
     url("../images/stavanger-footer.jpg");
   background-size: no-repeat;
   background-size: cover;
-}
-
-footer .container {
-  max-width: 900px;
 }
 
 footer a {
@@ -43,17 +39,20 @@ footer li {
   padding-bottom: 5px;
 }
 
-footer h4 {
+h4 {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1;
+}
+
+p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 footer p {
   opacity: 0.7;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 .grid {
@@ -67,12 +66,11 @@ footer .grid {
 
 main .grid {
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 40px;
 }
 
-main .oil-rig-img {
-  object-fit: contain;
-  max-width: 90%;
+.img-responsive {
+  max-width: 100%;
 }
 
 header {
@@ -82,29 +80,37 @@ header {
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 50px 0;
 }
 
-header h1 {
+h1 {
   font-weight: 700;
   font-size: 70px;
   line-height: 1.2;
 }
 
-header h2 {
-  font-weight: 400;
-  font-size: 40px;
+h2,
+h3 {
   line-height: 1.5;
 }
 
+h3 {
+  font-size: 35px;
+}
+
 header h3 {
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 1.5px;
+  font-weight: 400;
+}
+
+h2 {
   letter-spacing: 5px;
 }
 
-header .learn-more-link {
+header h2 {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.learn-more-link {
   padding: 16px 32px;
   background-color: white;
   text-decoration: none;
@@ -124,8 +130,6 @@ main {
 main h2 {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 5px;
   color: #272044;
   opacity: 0.3;
   margin: 0;
@@ -133,41 +137,41 @@ main h2 {
 
 main h3 {
   font-weight: 700;
-  font-size: 30px;
-  line-height: 1.5;
   color: #272044;
   margin: 0;
 }
 
 main p {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.5;
   color: #272044;
   opacity: 0.7;
 }
 
 @media (max-width: 900px) {
-  header {
+  section {
     padding: 60px 0;
   }
 
-  header h1 {
+  h1 {
     font-size: 40px;
   }
 
-  header h2 {
-    font-size: 18px;
-  }
-
-  header h3 {
+  h3 {
     font-size: 20px;
   }
 
-  header .learn-more-link {
+  body h2 {
+    font-size: 13px;
+  }
+
+  .learn-more-link {
     font-size: 10px;
     padding: 12px 24px;
     margin-top: 16px;
+  }
+
+  main .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
   }
 
   footer .grid {
@@ -177,14 +181,5 @@ main p {
 
   footer .column {
     text-align: center;
-  }
-
-  footer h4 {
-    font-size: 16px;
-  }
-
-  footer p,
-  ul {
-    font-size: 15px;
   }
 }
