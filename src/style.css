@@ -1,16 +1,28 @@
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 body {
   font-family: "Poppins", sans-serif;
-  margin: 0;
+  margin: 0 auto;
+  background-color: #272044;
+}
+
+.text-center {
+  text-align: center;
 }
 
 section {
-  max-width: 70%;
-  margin: 0 auto;
-  padding: 80px 0;
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 80px 100px;
+}
+
+section.secondary {
+  background-color: #f8f8f8;
 }
 
 footer {
@@ -64,9 +76,46 @@ footer .grid {
   grid-gap: 64px;
 }
 
-main .grid {
+.grid-2-columns {
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+
+.card {
+  background-color: white;
+  margin-top: 30px;
+}
+
+.card h4,
+h5 {
+  color: #272044;
+}
+
+h5 {
+  font-size: 13px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 3px;
+  background-color: #462cb2;
+  text-decoration: none;
+  padding: 16px 32px;
+  margin-top: 30px;
+}
+
+div.card-text {
+  margin: 24px 32px;
 }
 
 .img-responsive {
@@ -110,7 +159,7 @@ header h2 {
   font-size: 20px;
 }
 
-.learn-more-link {
+.header-btn {
   padding: 16px 32px;
   background-color: white;
   text-decoration: none;
@@ -148,7 +197,7 @@ main p {
 
 @media (max-width: 900px) {
   section {
-    padding: 60px 0;
+    padding: 60px 80px;
   }
 
   h1 {
